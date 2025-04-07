@@ -39,10 +39,10 @@ function updateGame() {
   if (direction === "RIGHT") head.x += snakeBlock;
 
   // Snake wraps around the border (the canvas edge)
-  if (head.x < 0) head.x = canvasWidth - snakeBlock;   // Wrap to the right side
-  if (head.x >= canvasWidth) head.x = 0;               // Wrap to the left side
-  if (head.y < 0) head.y = canvasHeight - snakeBlock;  // Wrap to the bottom
-  if (head.y >= canvasHeight) head.y = 0;              // Wrap to the top
+  if (head.x < 0) head.x = canvasWidth - snakeBlock;
+  if (head.x >= canvasWidth) head.x = 0;
+  if (head.y < 0) head.y = canvasHeight - snakeBlock;
+  if (head.y >= canvasHeight) head.y = 0;
 
   snake.unshift(head);
 
